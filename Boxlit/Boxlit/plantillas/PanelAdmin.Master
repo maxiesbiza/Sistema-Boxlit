@@ -13,6 +13,11 @@
 
   <title>Panel de Administración</title>
 
+    <!-- ////////////////////////DEFINICION DE PLACEHOLDER -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -331,12 +336,14 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <%--<div class="container-fluid">
+        <%--<div class="container-fluid">--%>
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+          <%--<h1 class="h3 mb-4 text-gray-800">Blank Page</h1>--%>
+          <!-- ///////////////////////////DEFINICION DE PLACE HOLDER -->
+            <h1 class="page-header"><asp:ContentPlaceHolder ID="regionTitulo" runat="server">   &nbsp;&nbsp;&nbsp;   Bienvenido Administrador </asp:ContentPlaceHolder> </h1>
 
-        </div>--%>
+        </div>
         <!-- /.container-fluid -->
 
       </div>
@@ -351,11 +358,14 @@
         </div>
       </footer>--%>
       <!-- End of Footer -->
+      <!-- ///////////////////////////////////////////DEFINICION DE PLACEHOLDER-->
+      <asp:ContentPlaceHolder ID="regionContenido" runat="server">
 
+            </asp:ContentPlaceHolder>
     </div>
     <!-- End of Content Wrapper -->
 
-  </div>
+ <%-- </div>--%>
   <!-- End of Page Wrapper -->
 
   <!-- Scroll to Top Button-->
@@ -392,6 +402,10 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
+  <!-- ///////////////////////////////////////////DEFINICION DE PLACEHOLDER-->
+    <asp:ContentPlaceHolder ID="regionScript" runat="server">
+
+    </asp:ContentPlaceHolder>
 </body>
 
 </html>
