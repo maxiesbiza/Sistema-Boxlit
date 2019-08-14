@@ -9,3 +9,6 @@
     </script>
 </body> 
 </asp:Content>
+<asp:Content ID="Content2"  ContentPlaceHolderID="regionContenido" runat="server">
+
+</asp:Content>
