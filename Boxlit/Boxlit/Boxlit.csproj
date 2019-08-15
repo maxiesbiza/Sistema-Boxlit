@@ -67,10 +67,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ABM_Proveedores.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1PruebaGit.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABM_Proveedores.aspx.cs">
+      <DependentUpon>ABM_Proveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM_Proveedores.aspx.designer.cs">
+      <DependentUpon>ABM_Proveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1PruebaGit.aspx.cs">
       <DependentUpon>WebForm1PruebaGit.aspx</DependentUpon>
@@ -81,6 +96,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
