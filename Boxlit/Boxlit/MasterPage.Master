@@ -14,7 +14,7 @@
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <p>
-                    Master Page</p>
+                    Pagina Maestra</p>
             </asp:ContentPlaceHolder>
         </div>
     </form>
